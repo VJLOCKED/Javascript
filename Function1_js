@@ -1,0 +1,14 @@
+function addNumber(num1, num2) {
+    return(num1 + num2);
+}
+
+function subNumber(num1, num2) {        
+    return(num1 - num2);
+}
+
+function addString(str1, str2) {
+    return(str1 + str2);
+}
+
+console.log(addNumber(5,6),subNumber(4, 2),addString("2", "3"));
+
