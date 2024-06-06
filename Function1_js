@@ -1,3 +1,17 @@
+// Syntax for Function :  function functionName(--arguments or valeues seperated by comma or no arguments at all---){code to be executed
+// the we use return statement to get output }
+
+//In below example, we make use of two different functions:
+//the sum() function, where we pass two numbers as arguments
+//the console.log() function, where we supply the newly created variables as arguments
+
+
+
+var onePlusTwo = sum(1, 2);
+var twoPlusTwenty = sum(2, 20);
+
+console.log(onePlusTwo, twoPlusTwenty);
+
 function addNumber(num1, num2) {
     return(num1 + num2);
 }
