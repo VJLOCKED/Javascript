@@ -19,7 +19,7 @@ console.log("index of element Vishwa is: ", arr.indexOf("Vishwa"))
 // Searching from a specified position
 
 arr = Array.of("My","Vishwa" , "name", "is", "Vishwa", "J");
-console.log("last index of element Vishwa is: " ,arr.lastIndexOf("Vishwa", 5))
+console.log("last index of element Vishwa is: " ,arr.lastIndexOf("Vishwa"))
 
 // ----------------------------------------------------------------
 
@@ -108,6 +108,7 @@ console.log(arr.concat(arr1))
 arr = Array.of("My", "name", "is", "Vishwa", "J");
 
 console.log(arr.join(" ")) //o/p = My name is Vishwa J
+console.log(typeof arr.join(" ")) //
 
 // join with comma
 
@@ -214,10 +215,6 @@ console.log(arr.toString) //o/p = My,name,is,Vishwa,J
 
 // ----------------------------------------------------------------
 
-//size() method
 
-arr = Array.of("My", "name", "is", "Vishwa", "J");
-
-console.log(arr.size(arr)) //o/p = 5
 
 // ----------------------------------------------------------------
