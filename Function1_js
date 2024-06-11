@@ -7,11 +7,6 @@
 
 
 
-var onePlusTwo = sum(1, 2);
-var twoPlusTwenty = sum(2, 20);
-
-console.log(onePlusTwo, twoPlusTwenty);
-
 function addNumber(num1, num2) {
     return(num1 + num2);
 }
@@ -26,3 +21,14 @@ function addString(str1, str2) {
 
 console.log(addNumber(5,6),subNumber(4, 2),addString("2", "3"));
 
+function weather(temperatur){
+    if(temperatur <=45 && temperatur >= 33){
+        console.log("It's hot today");
+    }else if (temperatur < 33 && temperatur >=23 ) {
+        console.log("It's moderate today");
+    }else if (temperatur<23 ) {
+        console.log("It's cold today");  
+    }      
+
+}
+weather(33)
