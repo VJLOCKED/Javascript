@@ -1,0 +1,17 @@
+body{
+    align-content: center;
+    justify-content: center;
+    background-color: blueviolet;
+    text-align: center;
+    margin: auto;
+}
+
+button{
+    background-color: white;
+
+    color: red;
+}
+
+h1{
+    color: yellow;
+}
