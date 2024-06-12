@@ -1,24 +1,18 @@
 let arrayOne = [1, "one" ,true ]
-<<<<<<< HEAD
+console.log(arrayOne)
 console.log(arrayOne.length)
 console.log(arrayOne[1])
-console.log(arrayOne.length[-1])
-=======
-
-console.log(arrayOne.length)
-console.log(arrayOne[1])
->>>>>>> 257a46af6f120e3aa7029086f3bcac81fd1e3c0b
+console.log()
 
 for(i=0 ; i<arrayOne.length ; i++)
     {
         console.log(arrayOne[i])
-<<<<<<< HEAD
+
     }
-=======
-    }
+    console.log()
 
 arrayOne.forEach(element => console.log(element))
-
+console.log()
 //Using array litral;
 
 let arrayTwo = [1,2,3,4,5,6,7,8,9,10]
@@ -44,4 +38,3 @@ console.log(arrayFour)
 arrayFour[0]=1
 
 console.log(arrayFour)
->>>>>>> 257a46af6f120e3aa7029086f3bcac81fd1e3c0b
