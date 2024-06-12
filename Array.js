@@ -13,6 +13,7 @@ for(i=0 ; i<arrayOne.length ; i++)
 
 arrayOne.forEach(element => console.log(element))
 console.log()
+
 //Using array litral;
 
 let arrayTwo = [1,2,3,4,5,6,7,8,9,10]
