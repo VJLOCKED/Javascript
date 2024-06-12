@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 // Using object literal
 
 let student = {name: 'Vishwa', email: 'vishwa@gmail.com', age: 13}
@@ -247,12 +246,4 @@ console.log(student16)
 console.log(student16.address)
 
 
-=======
-let organisation= {
-    name: "Coding Ninjas",
-    location: "Delhi",
-    established: "2016"
-}
-console.log(organisation);
->>>>>>> Stashed changes
 
