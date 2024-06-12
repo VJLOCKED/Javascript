@@ -121,5 +121,129 @@ let student9 = {
 console.log('gender' in student9)
 console.log('age' in student9)
 
+// To check if a property exists using hasOwnProperty
+
+console.log("To check if a property exists: ")
+let student10 = {
+    name: 'Michael',
+    age: 15,
+    id: 1001,
+    'full name': 'Michael Doe'
+    
+}
+
+console.log(student10.hasOwnProperty('name'))
+
+// Methods
+//Methods inside Objects in JS. 
+// Method is an Object property, which contains a function definition. 
+// Therefore, Methods are used to add functionality to Objects.
+
+console.log("Methods: ")
+
+let student11 = {
+    name: 'Michael',
+    age: 15,
+    id: 1001,
+    'full name': 'Michael Doe',
+    speak(){
+        console.log("Hello, I am Vishwa")
+    }
+}
+
+student11.speak()
+
+// we can also add methods of the object outside the object 
+
+console.log("we can also add methods of the object outside the object : ")
+let student12 = {
+    name: 'Michael',
+    age: 15,
+    id: 1001,
+    'full name': 'Michael Doe'
+}
+student12.speak=function(){
+        console.log("Hello, I am Vishwa")
+}
+
+student12.speak()
+
+// using this keyword
+
+console.log("using this keyword: ")
+let student13 = {
+    name: 'Michael',
+    age: 15,
+    id: 1001,
+    'full name': 'Michael Doe',
+    speak(){
+        console.log("Hello, I am " + this.name)
+    },
+    speak2(){
+        console.log(`I am ${this.age} years old`)
+    
+    },
+    speak3(){
+        console.log(`My full name is ${this['full name']}`)
+    
+    }
+}
+// here this refers to student13 object
+
+student13.speak()
+
+student13.speak2()
+
+student13.speak3()
+
+// removing a property of an Object
+// we use 'delete' operator
+
+console.log("removing a property of an Object: ")
+let student14 = {
+    name: 'Michael',
+    age: 15,
+    id: 1001,
+    'full name': 'Michael Doe'
+}
+
+delete student14.age
+console.log(student14) //age property has een deleted
+
+// Object inside object
+
+console.log("Object inside object: ")
+let student15 = {
+    name: 'Michael',
+    age: 15,
+    id: 1001,
+    'full name': 'Michael Doe',
+    address: {
+        city: 'Mumbai',
+        state: 'Maharashtra'
+    }
+}
+
+console.log(student15.address)
+
+console.log(student15.address.city)
+
+// Object inside object constructor
+
+console.log("Object inside object constructor: ")
+function Student(name, email, age){
+    this.name = name
+    this.email = email
+    this.age = age
+    this.address = {
+        city: 'Mumbai',
+        state: 'Maharashtra'
+    }
+}
+
+let student16 = new Student('Vishwa', 'vishwa@gmail.com', 13)
+console.log(student16)
+console.log(student16.address)
+
 
 
