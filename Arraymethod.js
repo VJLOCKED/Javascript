@@ -215,6 +215,12 @@ console.log(arr.toString) //o/p = My,name,is,Vishwa,J
 
 // ----------------------------------------------------------------
 
+//every() method for array
+ //returns true if all the elements of the array satisfy the condition.
+
+ const num=[1,2,3,4,5,6,7,8,9]
+
+console.log(num.every(element => element > 0)) //o/p = true
 
 
 // ----------------------------------------------------------------

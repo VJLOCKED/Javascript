@@ -115,8 +115,11 @@ let student9 = {
     age: 15,
     id: 1001,
     'full name': 'Michael Doe'
-    console.log(this.name)
+    
 }
 
 console.log('gender' in student9)
 console.log('age' in student9)
+
+
+
