@@ -23,7 +23,7 @@ var sentence = "\"Javascript strings are useful for storing text.\"";
 console.log(sentence);
 
 // Escaped characters can also be used to add tabs or go to the next line in your strings, with the following:
-clearInterval
+// clearInterval
 // a new line - \n
 // a tab - \t
 

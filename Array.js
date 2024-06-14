@@ -1,12 +1,11 @@
 //array is an object in Javascript.
 
 let arrayOne = [1, "one" ,true ]
-<<<<<<< Updated upstream
+
 console.log(arrayOne)
-=======
+
 arrayOne.forEach(item => {console.log(item)} )
 arrayOne.map(item => {console.log(item)})
->>>>>>> Stashed changes
 console.log(arrayOne.length)
 console.log(arrayOne[1])
 console.log()
@@ -14,7 +13,6 @@ console.log()
 for(i=0 ; i<arrayOne.length ; i++)
     {
         console.log(arrayOne[i])
-<<<<<<< Updated upstream
 
     }
     console.log()
@@ -47,8 +45,7 @@ console.log(arrayFour)
 arrayFour[0]=1
 
 console.log(arrayFour)
-=======
-    }
+
 
 //============================================================================
 
@@ -100,4 +97,4 @@ console.log(numbers);
 // Creating an array of strings
 let names = new Array("Smith", 'Bob', 'David');
 console.log(names);
->>>>>>> Stashed changes
+

@@ -172,6 +172,12 @@ arr = Array.of(5,3,4,2,1);
 
 console.log(arr.sort())
 
+//to sort number less then zero and greater then 9
+
+arr = Array.of(-1,-2,5,3,4,2,1,12,13);
+
+console.log(arr.sort((a,b) => a-b))
+
 // ----------------------------------------------------------------
 
 //shift() method
@@ -180,6 +186,11 @@ console.log(arr.sort())
 arr = Array.of("My", "name", "is", "Vishwa");
 arr.shift();
 console.log("shift updated array: ", arr) // first element removed
+
+//to get the first element of an array
+
+let num2 = [1,2,3,3]
+console.log(num2.shift()) //o/p = 1
 
 // ----------------------------------------------------------------
 
@@ -204,6 +215,27 @@ arr = Array.of("My", "name", "is", "Vishwa", "J");
 
 console.log(arr.slice(1,4)) //o/p = [ 'name', 'is', 'Vishwa' ]
 
+// to clone an array
+
+let cloneArr = function(array1)
+{
+console.log(array1.slice(0))
+}
+cloneArr([1,2,3,4,5])
+cloneArr([6,7,8,9,10])
+
+// splice() method
+
+arr = Array.of("My", "name", "is", "Vishwa", "J");
+
+console.log(arr.splice(1,2)) //o/p = [ 'name', 'is' ]
+console.log(arr) //o/p = [ 'My', 'Vishwa', 'J' ]
+
+arr = Array.of("My", "name", "is", "Vishwa", "J");
+
+console.log(arr.splice(1,2, "My")) //o/p = [ 'name', 'is' ]
+console.log(arr) //o/p = [ 'My', 'My' , 'Vishwa', 'J' ]
+
 // ----------------------------------------------------------------
 
 //toString() method
@@ -222,5 +254,57 @@ console.log(arr.toString) //o/p = My,name,is,Vishwa,J
 
 console.log(num.every(element => element > 0)) //o/p = true
 
+
+// ----------------------------------------------------------------
+
+// isArray() method
+
+console.log(Array.isArray(num)) //o/p = true
+
+
+// to check wheather input is arr or not
+
+let isArr = function(input)
+{
+    if(Array.isArray(input))
+    {
+        console.log(true)
+    }
+    else
+    {
+        console.log(false)
+    }
+}
+
+isArr([1,2,3,4,5])
+
+// ----------------------------------------------------------------
+
+// filter() method
+
+const num3=[1,2,3,4,5,6,7,8,9]
+
+console.log(num3.filter(element => element > 5)) //o/p = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+
+// ----------------------------------------------------------------
+
+//toUpperCase() method for arrays
+
+
+let arr5 = Array.of('a', 'b', 'c', 'd')
+console.log(arr5.map(item => item.toUpperCase()))
+
+arr5.map(item => console.log(item.toUpperCase()))
+
+let arr6 = Array.of('a', 'b', 'c', 'd', 'e')
+console.log(arr6.map(item => item.toUpperCase()))
+
+// ----------------------------------------------------------------
+
+//reduce() method for arrays
+
+const num4=[1,2,3,4,5,6,7,8,9]
+
+console.log(num4.reduce((accumulator, currentValue) => accumulator + currentValue)) //o/p = 45
 
 // ----------------------------------------------------------------
