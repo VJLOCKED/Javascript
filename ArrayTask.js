@@ -1,3 +1,23 @@
+// to return unqiue values 
+
+// let arr = [-1,-1,2,4,4,10,23,10,2,1]
+
+// arr.sort((a, b) => a - b)
+
+// for(let i=0; i<arr.length; i++){
+//     if(i == 0){
+//         console.log(arr[i])
+// }else if(arr[i] !== arr[i-1]){
+//     console.log(arr[i])
+// }
+// // } 
+
+// // // using ...new Set
+
+// // arr = [-1,-1,2,4,4,10,23,10,2,1]
+// // arr.sort((a, b) => a - b)
+// // console.log(...new Set(arr)) // O/P : -1 1 2 4 10 23
+// // console.log([...new Set(arr)]) // O/P : [ -1, 1, 2, 4, 10, 23 ]
 
 // Using Function with arg and no return value
 
@@ -32,7 +52,7 @@
 //     return uniqueArr
 // }
 
-console.log(returnUniqueValues(values1))
+// console.log(returnUniqueValues(values1))
 
 // Using unshift() and reverse method
 

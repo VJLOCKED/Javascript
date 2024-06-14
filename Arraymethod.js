@@ -87,6 +87,7 @@ let sum=0
 arr1.forEach(
     function sumOfEachNumbers(element){
         sum=sum + element
+        console.log("sum is ============" )
         console.log(sum)
     }
 )
@@ -227,6 +228,7 @@ cloneArr([6,7,8,9,10])
 // splice() method
 
 arr = Array.of("My", "name", "is", "Vishwa", "J");
+
 
 console.log(arr.splice(1,2)) //o/p = [ 'name', 'is' ]
 console.log(arr) //o/p = [ 'My', 'Vishwa', 'J' ]

@@ -1,148 +1,73 @@
-// to return unqiue values 
+ //custom method for getting pop() method
 
-// let arr = [-1,-1,2,4,4,10,23,10,2,1]
+ let arr = [1,2,3,4,5,6]
+ Array.prototype.pop2 = function() {
+ this.splice(this.length - 1, 1);
+ return this;
+ };
 
-// arr.sort((a, b) => a - b)
+ console.log(arr.pop2());
 
-// for(let i=0; i<arr.length; i++){
-//     if(i == 0){
-//         console.log(arr[i])
-// }else if(arr[i] !== arr[i-1]){
-//     console.log(arr[i])
-// }
-// // } 
+ arr = [1,2,3,4,5,6]
+function customPop(arr) {
+    arr.splice(arr.length - 1, 1);
+    return arr;
+}
 
-// // // using ...new Set
+console.log(customPop(arr));
 
-// // arr = [-1,-1,2,4,4,10,23,10,2,1]
-// // arr.sort((a, b) => a - b)
-// // console.log(...new Set(arr)) // O/P : -1 1 2 4 10 23
-// // console.log([...new Set(arr)]) // O/P : [ -1, 1, 2, 4, 10, 23 ] 
+// custom method for shift method
 
-// // Using Function with arg and no return value
+ arr = [1,2,3,4,5,6]
 
-// let value = [-1,-1,2,4,4,10,23,10,2,1]
+ function customShift(arr) {
+     arr.splice(0, 1);
+     return arr;
+ }
 
-// value.sort((a, b) => a - b)
-// function returnUniqueValues(arr){
-//     for(let i=0; i<arr.length; i++){
-//         if(i == 0){
-//             console.log(arr[i])
-//     }else if(arr[i] !== arr[i-1]){
-//         console.log(arr[i])
-//     }
-//     } 
-// }
+ console.log(customShift(arr));
 
-// returnUniqueValues(value)
-
-// Using Function with arg and return value
-
-// let values1= [-1,-1,2,4,4,10,23,10,2,1]
-// function returnUniqueValues(arr){
-//     arr.sort((a, b) => a - b)
-//     uniqueArr=[]
-//     for(let i=0; i<arr.length; i++){
-//         if(i == 0){
-//             uniqueArr.push(arr[i])
-//     }else if(arr[i] !== arr[i-1]){
-//         uniqueArr.push(arr[i])
-//     }
-//     } 
-//     return uniqueArr
-// }
-
-// console.log(returnUniqueValues(values1))
-
-// ASCII values
-// print small letters 
-
-// for(let i=97; i<=122; i++){
-//     console.log(String.fromCharCode(i))
-// }
-
-// print capital letters
-
-// for(let i=65; i<=90; i++){
-//     console.log(String.fromCharCode(i))
-// }
-
-// find ASCII value of BAD
+ // custom method for unshift method
 
 
-// let str = "BAD"
-// for(let i=0; i< str.length; i++){
+ arr = [1,2,3,4,5,6]
 
-//     console.log(str.charCodeAt(i))
-// }
+ function customUnshift(arr) {
+     arr.splice(0, 0, 7);
+     return arr;
+ }
 
+ console.log(customUnshift(arr));
 
-//task play with string 
-//string slice 
-//4 types of functions
+ // custom method for push() method
 
-// let a
-// let b=20
-// console.log(a+b)
+ arr = [1,2,3,4,5,6]
 
-//  let values1= [-1,-1,2,4,4,10,23,10,2,1]
-// function returnUniqueValues(arr){
-//     arr.sort((a, b) => a - b)
-//     uniqueArr=[]
-//     for(let i=0; i<arr.length; i++){
-//         if(i == 0){
-//             uniqueArr.unshift(arr[i])
-//     }else if(arr[i] !== arr[i-1]){
-//         uniqueArr.unshift(arr[i])
-//     }
-//     uniqueArr.reverse(arr[i])
-//     } 
-//     return uniqueArr
-// }
-// console.log(returnUniqueValues(values1))
+ function customPush(arr) {
+     arr.splice(arr.length, 0, 7);
+     return arr;
+ }
 
-// var sorting = function(arr){
-//     arr.sort((a, b) => a - b)
-//     return arr
-// }
+ // Using forEach()
+ 
+ arr = [1,2,3,4,5,6]
 
-// console.log(sorting(values1))
+ let sumOfEachNumbers=function(element) {
+ for( i=0; i<arr.length; i){
+   let sum = 0
+   arr.forEach(element => {sum += element} )
+   return sum;
+ }
 
-// values1= [-1,-1,2,4,4,10,23,10,2,1]
-// function sorting(arr){
-//     arr.sort((a, b) => a - b)
-//     return arr
-// }
+ }
+  console.log(sumOfEachNumbers(arr));
 
-// console.log(sorting(values1))
-
-// let values1 = [-1, -10,1, 2 , 1, 3, 5, 7, 2, 11, 10, 3, 4, 8] //-10,-1, 1, 2, 3,4, 5 , 7, 8, 10, 11
-
-// let values2 = [-1, -10,1, 2 , 1, 3, 5, 7, 2,]
-
-
-// /* values2.sort((a, b) => a - b); */
-
-//                         //undefined
-// function returnUniqueValues(arr){
-// //sorting
-// arr.sort((a, b) => a - b);
-
-// let uniqueArr=[];
-
-// //creating unique array
-// 	for(let i=0; i<arr?.length; i++){ //1
-// if(i ==0){
-// /* console.log(arr[i]) */
-// uniqueArr.push(arr[i])
-// }else{
-// if(arr[i]!= arr[i-1]) uniqueArr.push(arr[i])
-// }
-// }
-
-// return uniqueArr
-// }
-
-// const uniqueValues = returnUniqueValues(values2) 
-// console.log(uniqueValues)
-
+  let arr2 = [1,2,3,4,5,6,7]
+  function sumOfEachNumbers2(arr2) {
+    for( i=0; i<arr2.length; i++){
+        let sum =0
+        arr2.forEach(element => sum+= element)
+        return sum;
+    }
+}
+console.log(sumOfEachNumbers2(arr2))
